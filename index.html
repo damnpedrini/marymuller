@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" />
     <title>Mary Muller</title>
     <style>
         body {
@@ -13,26 +14,67 @@
             box-sizing: border-box;
         }
         .navbar {
-            background-color: transparent;
-            overflow: hidden;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            color: black;
-        }
+    position: absolute;
+    width: 1440px; /* Ajuste conforme necessário */
+    height: 107px; /* Ajuste conforme necessário */
+    left: calc(50% - 1440px / 2);
+    top: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.024) 0%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    align-items: center;
+    padding: 0 20px; /* Adicione algum preenchimento interno se necessário */
+    box-sizing: border-box;
+    z-index: 1000; /* Certifique-se de que a navbar esteja acima dos outros conteúdos */
+}
+
+/* Contêiner dos Botões */
+.buttons-container {
+    display: flex;
+    gap: 50px; /* Aumente o valor para mais espaçamento entre os botões */
+}
+
+/* Botões */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+/* Logo */
+.logo {
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    visibility: hidden;
+    left: 112px;
+    top: calc(50% - 43px/2);
+}
+
+/* Logo 2 */
+.logo2 {
+    width: 96px;
+    height: 56px;
+    position: absolute;
+    left: 108px;
+    top: calc(50% - 56px/2 - 0.5px);
+}
+
+/* Buttons */
+.buttons {
+    position: absolute;
+    width: 771px;
+    height: 21px;
+    left: calc(50% - 771px/2 + 222.5px);
+    top: calc(50% - 21px/2);
+}
         .section {
             padding: 60px 20px;
             text-align: center;
@@ -48,8 +90,8 @@
             position: relative;
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column; 
+            justify-content: center;
             padding: 0 20px;
         }
         .hero-text {
@@ -66,7 +108,7 @@
             -webkit-text-fill-color: transparent;
             text-fill-color: transparent;
             margin-left: 50px;
-            margin-right: auto;
+            margin-bottom: 20px;
         }
         .hero-t-rectangle {
             position: absolute;
@@ -78,13 +120,25 @@
             backdrop-filter: blur(7.5px);
             border-radius: 10px;
             padding: 20px;
-            text-align: left;
+            text-align: right;
         }
         .hero-hor-rios-de-atendimento {
-            margin-bottom: 10px;
+            position: absolute;
+            width: 206.57px;
+            height: 24px;
+            left: 1109px;
+            top: 351px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: right;
         }
         .hero-sega-sex, .hero-sab {
             margin-top: 10px;
+            text-align: right;
         }
         .persona {
             position: absolute;
@@ -93,6 +147,43 @@
             transform: translate(-50%, -50%);
             width: 500px;
             height: auto;
+        }
+        .agende-consulta-wrapper {
+            position: absolute;
+            width: 256.71px;
+            height: 53px;
+            background: rgba(221, 120, 51, 0.3);
+            backdrop-filter: blur(7.5px);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            left: 50px; 
+            top: calc(100% - 100px); 
+        }
+        .agende-consulta {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            flex: 1;
+        }
+        .agende-consulta-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        .agende-consulta-icon::before {
+            content: '→';
+            font-size: 18px;
+            color: #DD7833; 
         }
         .footer {
             background-color: #333;
@@ -109,14 +200,29 @@
         .hero-bg-ftm {
             display: none;
         }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .section-content h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section-content p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="#section1">Home</a>
+        <a href="#section1" class="home">Home</a>
         <a href="#section2">Sobre</a>
         <a href="#section3">Serviços</a>
-        <a href="#section4">Testemunhas</a>
+        <a href="#section4">Testemunhos</a>
         <a href="#section5">Contato</a>
     </div>
 
@@ -132,12 +238,26 @@
                 <div class="hero-sab">SAB: 09:00-13:00</div>
             </aside>
         </div>
+        <div class="agende-consulta-wrapper">
+            <div class="agende-consulta">
+                Agende sua consulta
+            </div>
+            <div class="agende-consulta-icon"></div>
+        </div>
     </div>
     
     <div id="section2" class="section">
-        <h2>Seção 2</h2>
-        <p>Conteúdo da segunda seção.</p>
+        <div class="section-content">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo à nossa página de informações. Aqui, você pode conhecer mais sobre nós e nosso trabalho. Nosso objetivo é proporcionar a melhor experiência para nossos clientes, oferecendo serviços de qualidade e atendimento personalizado.</p>
+            <p>Somos uma equipe dedicada e apaixonada pelo que fazemos. Trabalhamos incansavelmente para garantir que você receba o melhor serviço possível. Se você tem alguma dúvida ou gostaria de saber mais sobre nossos serviços, não hesite em nos contatar.</p>
+            <div class="cta-button">
+                <div class="cta-text">Agende sua consulta</div>
+                <div class="cta-arrow"></div>
+            </div>
+        </div>
     </div>
+
     <div id="section3" class="section">
         <h2>Seção 3</h2>
         <p>Conteúdo da terceira seção.</p>
@@ -156,5 +276,3 @@
     </div>
 </body>
 </html>
-
-

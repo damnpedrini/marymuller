@@ -5,7 +5,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Navbar */
 .navbar {
     position: absolute;
     width: 1440px;
@@ -21,13 +20,11 @@ body {
     z-index: 1000;
 }
 
-/* Contêiner dos Botões */
 .buttons-container {
     display: flex;
     gap: 50px;
 }
 
-/* Botões */
 .navbar a {
     color: white;
     padding: 14px 20px;
@@ -41,7 +38,6 @@ body {
     color: black;
 }
 
-/* Logo */
 .logo {
     width: 43px;
     height: 43px;
@@ -51,7 +47,6 @@ body {
     top: calc(50% - 43px / 2);
 }
 
-/* Logo 2 */
 .logo2 {
     width: 96px;
     height: 56px;
@@ -60,7 +55,6 @@ body {
     top: calc(50% - 56px / 2 - 0.5px);
 }
 
-/* Botões na Navbar */
 .buttons {
     position: absolute;
     width: 771px;
@@ -69,10 +63,8 @@ body {
     top: calc(50% - 21px / 2);
 }
 
-/* Seções */
 .section {
     padding: 60px 20px;
-    text-align: center;
     position: relative;
 }
 
@@ -84,8 +76,9 @@ body {
     position: relative;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    flex-direction: row; /* Alinha itens na horizontal */
+    justify-content: space-between; /* Espaça os itens para os lados opostos */
+    align-items: center; /* Alinha itens verticalmente ao centro */
     padding: 0 20px;
 }
 
@@ -93,9 +86,8 @@ body {
 .text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    margin-left: 50px;
-    margin-bottom: 20px;
+    align-items: flex-end; /* Alinha o texto à direita */
+    margin-right: 50px;
 }
 
 /* Texto Principal */
@@ -105,15 +97,11 @@ body {
     line-height: 28px;
     color: #FFFFFF;
     margin-bottom: 10px;
+    text-align: right;
 }
 
 /* Texto Secundário */
 .hero-text {
-    position: absolute;
-    width: 479.33px;
-    height: 144px;
-    left: calc(50% - 479.33px / 2 - 367.02px);
-    top: 332px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -125,10 +113,10 @@ body {
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     margin: 0;
-    text-align: center;
+    text-align: right;
 }
 
-/* Wrapper do CTA */
+/* Botão de Agendamento */
 .agende-consulta-wrapper {
     display: flex;
     align-items: center;
@@ -141,7 +129,6 @@ body {
     margin-top: 20px;
 }
 
-/* Texto do CTA */
 .agende-consulta {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -152,7 +139,6 @@ body {
     flex: 1;
 }
 
-/* Ícone do CTA */
 .agende-consulta-icon {
     width: 24px;
     height: 24px;
@@ -175,7 +161,8 @@ body {
     width: 607.69px;
     height: 754px;
     position: absolute;
-    left: calc(50% - 607.69px / 2 + 196.55px);
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
     top: 147px;
     background: url('HERO 2.png') no-repeat center center;
     background-size: cover;
@@ -187,7 +174,7 @@ body {
     position: absolute;
     width: 232px;
     height: 125px;
-    right: 112px;
+    right: 20px; /* Ajuste a distância da borda direita conforme necessário */
     top: 332px;
     background: rgba(57, 144, 121, 0.15);
     backdrop-filter: blur(7.5px);
@@ -196,7 +183,6 @@ body {
     text-align: right;
 }
 
-/* Horários de Atendimento */
 .hero-hor-rios-de-atendimento {
     width: 206.57px;
     height: 24px;
@@ -209,17 +195,15 @@ body {
     text-align: right;
 }
 
-/* Horários de Atendimento Adicionais */
 .hero-sega-sex, .hero-sab {
     margin-top: 10px;
     text-align: right;
 }
 
-/* Rodapé */
 .footer {
     background-color: #333;
     color: white;
-    text-align: center; /* Completar a centralização do texto */
+    text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;

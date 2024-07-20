@@ -6,61 +6,45 @@ body {
 }
 
 .navbar {
-    position: absolute;
-    width: 1440px;
+    position: fixed;
+    width: 100%;
     height: 107px;
-    left: calc(50% - 1440px / 2);
     top: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.024) 0%, rgba(255, 255, 255, 0) 100%);
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 1000;
 }
 
-.buttons-container {
+.navbar .logo {
+    width: 96px;
+    height: 56px;
+}
+
+.navbar .nav-links {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px; /* Espaço aumentado entre os links */
 }
 
 .navbar a {
     color: white;
-    padding: 14px 20px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    padding: 10px;
+}
+
+.navbar a.active {
+    color: #DD7833;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: black;
-}
-
-.logo {
-    width: 43px;
-    height: 43px;
-    position: absolute;
-    visibility: hidden;
-    left: 112px;
-    top: calc(50% - 43px / 2);
-}
-
-.logo2 {
-    width: 96px;
-    height: 56px;
-    position: absolute;
-    left: 108px;
-    top: calc(50% - 56px / 2 - 0.5px);
-}
-
-.buttons {
-    position: absolute;
-    width: 771px;
-    height: 21px;
-    left: calc(50% - 771px / 2 + 222.5px);
-    top: calc(50% - 21px / 2);
+    color: #DD7833;
+    background-color: transparent;
 }
 
 .section {
@@ -68,7 +52,6 @@ body {
     position: relative;
 }
 
-/* Seção Principal */
 #section1 {
     background: url('/background.png') no-repeat center center;
     background-size: cover;
@@ -76,21 +59,19 @@ body {
     position: relative;
     min-height: 100vh;
     display: flex;
-    flex-direction: row; /* Alinha itens na horizontal */
-    justify-content: space-between; /* Espaça os itens para os lados opostos */
-    align-items: center; /* Alinha itens verticalmente ao centro */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
 }
 
-/* Contêiner do Texto */
 .text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alinha o texto à direita */
+    align-items: flex-end;
     margin-right: 50px;
 }
 
-/* Texto Principal */
 .consultation-text {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -100,7 +81,6 @@ body {
     text-align: right;
 }
 
-/* Texto Secundário */
 .hero-text {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -116,7 +96,6 @@ body {
     text-align: right;
 }
 
-/* Botão de Agendamento */
 .agende-consulta-wrapper {
     display: flex;
     align-items: center;
@@ -156,25 +135,23 @@ body {
     color: #DD7833;
 }
 
-/* Imagem Persona */
 .persona {
     width: 607.69px;
     height: 754px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    transform: translateX(-50%);
     top: 147px;
     background: url('HERO 2.png') no-repeat center center;
     background-size: cover;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0 0;
 }
 
-/* Retângulo no Texto Principal */
 .hero-t-rectangle {
     position: absolute;
     width: 232px;
     height: 125px;
-    right: 20px; /* Ajuste a distância da borda direita conforme necessário */
+    right: 20px;
     top: 332px;
     background: rgba(57, 144, 121, 0.15);
     backdrop-filter: blur(7.5px);
@@ -184,28 +161,25 @@ body {
 }
 
 .hero-hor-rios-de-atendimento {
-    width: 206.57px;
-    height: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
     color: #FFFFFF;
-    text-align: right;
 }
 
 .hero-sega-sex, .hero-sab {
-    margin-top: 10px;
-    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #F1F1F1;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
 }

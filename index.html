@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" />
     <title>Mary Muller</title>
     <style>
         body {
@@ -12,30 +13,30 @@
             box-sizing: border-box;
         }
         .navbar {
-            background-color: transparent; /* Navbar completamente transparente */
+            background-color: transparent;
             overflow: hidden;
             padding: 1rem;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
-            z-index: 1000; /* Para garantir que a navbar fique acima de outros elementos */
-            display: flex; /* Usando flexbox */
-            justify-content: flex-end; /* Alinha itens à direita */
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
         }
         .navbar a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            margin: 0 10px; /* Espaçamento simétrico entre os itens */
         }
         .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* Leve destaque ao passar o mouse */
+            background-color: rgba(255, 255, 255, 0.3);
             color: black;
         }
         .section {
             padding: 60px 20px;
             text-align: center;
+            position: relative;
         }
         .section:nth-child(even) {
             background-color: #f2f2f2;
@@ -44,6 +45,55 @@
             background: url('/background.png') no-repeat center center;
             background-size: cover;
             color: white;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .hero-text {
+            width: 479.33px;
+            height: 144px;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 72px;
+            background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            margin-left: 50px;
+            margin-right: auto;
+        }
+        .hero-t-rectangle {
+            position: absolute;
+            width: 232px;
+            height: auto;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(57, 144, 121, 0.15);
+            backdrop-filter: blur(7.5px);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        .hero-hor-rios-de-atendimento {
+            margin-bottom: 10px;
+        }
+        .hero-sega-sex, .hero-sab {
+            margin-top: 10px;
+        }
+        .persona {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: auto;
         }
         .footer {
             background-color: #333;
@@ -53,6 +103,12 @@
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .hero-wrapper,
+        .hero-background,
+        .hero-background-1,
+        .hero-bg-ftm {
+            display: none;
         }
     </style>
 </head>
@@ -66,9 +122,19 @@
     </div>
 
     <div id="section1" class="section">
-        <h2>Seção 1</h2>
-        <p>Conteúdo da primeira seção.</p>
+        <p class="hero-text">Transforme sua vida hoje!</p>
+        <img src="persona.png" alt="Persona" class="persona">
+        <div class="hero-t-rectangle">
+            <aside class="hero-rectangle-1">
+                <div class="hero-hor-rios-de-atendimento">
+                    Horários de atendimento:
+                </div>
+                <div class="hero-sega-sex">SEG a SEX: 09:00-19:00</div>
+                <div class="hero-sab">SAB: 09:00-13:00</div>
+            </aside>
+        </div>
     </div>
+    
     <div id="section2" class="section">
         <h2>Seção 2</h2>
         <p>Conteúdo da segunda seção.</p>

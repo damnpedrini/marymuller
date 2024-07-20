@@ -76,10 +76,6 @@ body {
     position: relative;
 }
 
-.section:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 /* Seção Principal */
 #section1 {
     background: url('/background.png') no-repeat center center;
@@ -93,10 +89,31 @@ body {
     padding: 0 20px;
 }
 
+/* Contêiner do Texto */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 /* Texto Principal */
+.consultation-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* Texto Secundário */
 .hero-text {
+    position: absolute;
     width: 479.33px;
     height: 144px;
+    left: calc(50% - 479.33px / 2 - 367.02px);
+    top: 332px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -107,71 +124,21 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-/* Retângulo no Texto Principal */
-.hero-t-rectangle {
-    position: absolute;
-    width: 232px;
-    height: 125px;
-    right: 112px;
-    top: 332px;
-    background: rgba(57, 144, 121, 0.15);
-    backdrop-filter: blur(7.5px);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: right;
-}
-
-/* Horários de Atendimento */
-.hero-hor-rios-de-atendimento {
-    position: absolute;
-    width: 206.57px;
-    height: 24px;
-    left: 1109px;
-    top: 351px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-align: right;
-}
-
-/* Horários de Atendimento Adicionais */
-.hero-sega-sex, .hero-sab {
-    margin-top: 10px;
-    text-align: right;
-}
-
-/* Imagem Persona */
-.persona {
-    position: absolute;
-    width: 607.69px;
-    height: 754px;
-    left: calc(50% - 607.69px / 2 + 196.55px);
-    top: 147px;
-    background: url('HERO 2.png') no-repeat center center;
-    background-size: cover;
-    border-radius: 16px 16px 0px 0px;
+    margin: 0;
+    text-align: center;
 }
 
 /* Wrapper do CTA */
 .agende-consulta-wrapper {
-    position: absolute;
-    width: 256.71px;
-    height: 53px;
+    display: flex;
+    align-items: center;
     background: rgba(221, 120, 51, 0.3);
     backdrop-filter: blur(7.5px);
     border-radius: 10px;
-    display: flex;
-    align-items: center;
     padding: 0 10px;
-    left: 50px;
-    top: calc(100% - 100px);
+    width: 256.71px;
+    height: 53px;
+    margin-top: 20px;
 }
 
 /* Texto do CTA */
@@ -203,40 +170,58 @@ body {
     color: #DD7833;
 }
 
+/* Imagem Persona */
+.persona {
+    width: 607.69px;
+    height: 754px;
+    position: absolute;
+    left: calc(50% - 607.69px / 2 + 196.55px);
+    top: 147px;
+    background: url('HERO 2.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+/* Retângulo no Texto Principal */
+.hero-t-rectangle {
+    position: absolute;
+    width: 232px;
+    height: 125px;
+    right: 112px;
+    top: 332px;
+    background: rgba(57, 144, 121, 0.15);
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Horários de Atendimento */
+.hero-hor-rios-de-atendimento {
+    width: 206.57px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+/* Horários de Atendimento Adicionais */
+.hero-sega-sex, .hero-sab {
+    margin-top: 10px;
+    text-align: right;
+}
+
 /* Rodapé */
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    text-align: center; /* Completar a centralização do texto */
+    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Ocultar Elementos */
-.hero-wrapper,
-.hero-background,
-.hero-background-1,
-.hero-bg-ftm {
-    display: none;
-}
-
-/* Conteúdo da Seção */
-.section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.section-content h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.section-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
 }

@@ -93,19 +93,19 @@ main .container {
 }
 
 .main-text p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
 .main-text h1 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
@@ -114,7 +114,7 @@ main .container {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
     margin: 0;
     padding: 0;
 }
@@ -214,10 +214,36 @@ main .container {
 }
 
 .servico-img-fundo {
-    background-image: url('../img/Mask\ group.svg');
+    background-image: url('../img/Mask group.svg');
     background-color: #1c352e;
     width: 26%;
     border-radius: 8px;
+}
+
+.sobre-a-nutri {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24px; 
+    color: #DD7833; 
+    margin: 0;
+    padding: 0;
+}
+
+.transformar-relacao {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 36px; 
+    color: #2A3D2A; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.jornada-nutricionista {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #333333; 
+    margin-top: 10px;
+    padding: 0;
+    line-height: 1.5;
 }
 
 .footer {

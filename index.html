@@ -19,7 +19,7 @@
                         <img src="img/Logo 2.svg" alt="Logo">
                     </div>
                     
-                    <ul class="ul">
+                    <ul class="navbar">
                         <a href="#section1" class="home">Home</a>
                         <a href="#section2">Sobre</a>
                         <a href="#section3">Serviços</a>
@@ -61,14 +61,16 @@
         <!-- fim da pagina principal -->
     </div>
 
-    <!-- section serviços-->
+    <!-- section serviços -->
     <section>
         <div class="container">
             <div class="servicos">
                 <div class="servicos-text">
-                    <p>SOBRE A NUTRI</p>
-                    <h1>Dedicada em transformar sua relação com a comida e a saúde.</h1>
-                    <p> Permita-me apresentar um pouco sobre mim e minha jornada como nutricionista. Desde jovem, fui fascinada pela intersecção entre alimentação e saúde, uma paixão que me guiou ao longo de toda minha formação e carreira. </p>
+                    <p class="sobre-a-nutri">SOBRE A NUTRI</p>
+                    <h1 class="transformar-relacao">Dedicada em transformar sua relação com a comida e a saúde.</h1>
+                    <p class="jornada-nutricionista">
+                        Permita-me apresentar um pouco sobre mim e minha jornada como nutricionista. Desde jovem, fui fascinada pela intersecção entre alimentação e saúde, uma paixão que me guiou ao longo de toda minha formação e carreira.
+                    </p>
                 </div>
     
                 <div class="servicos-img">
@@ -100,9 +102,11 @@
                 let index = sections.length;
 
                 while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
-                
-                navbarLinks.forEach(link => link.classList.remove('active'));
-                navbarLinks[index].classList.add('active');
+
+                if (navbarLinks[index]) {
+                    navbarLinks.forEach(link => link.classList.remove('active'));
+                    navbarLinks[index].classList.add('active');
+                }
             }
 
             window.addEventListener('scroll', setActiveLink);

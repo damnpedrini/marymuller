@@ -49,12 +49,12 @@ header nav {
     padding: 20px 10px 20px 20px;
 }
 
-nav ul {
+.navbar {
     display: flex;
     align-items: center;
 }
 
-nav ul a {
+.navbar a {
     color: white;
     margin: 0 16px;
     text-transform: uppercase;
@@ -63,13 +63,13 @@ nav ul a {
     cursor: pointer;
 }
 
-nav ul a:first-child {
-    color: #DD7833;
-}
-
-nav ul a:hover {
+.navbar a:hover {
     color: #DD7833;
     background-color: transparent;
+}
+
+.navbar a.active {
+    color: #DD7833;
 }
 
 /* css pagina principal */
@@ -185,65 +185,59 @@ main .container {
     font-size: 14px;
     color: white;
     font-weight: 300;
-    text-align: center;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .main-horario p {
-    color: white;
     font-size: 12px;
-    text-align: right;
-    font-weight: 300;
+    color: white;
+    margin: 0;
 }
 
-/* css dos serviços */
+/* css section serviços */
 .servicos {
     display: flex;
-    min-height: 85vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .servicos-text {
     width: 50%;
 }
 
-.servicos-img {
-    width: 50%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.servico-img-fundo {
-    background-image: url('../img/Mask group.svg');
-    background-color: #1c352e;
-    width: 26%;
-    border-radius: 8px;
-}
-
 .sobre-a-nutri {
-    font-family: 'Poppins', sans-serif; 
-    font-size: 24px; 
-    color: #DD7833; 
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #F1F1F1;
+    text-transform: uppercase;
     margin: 0;
-    padding: 0;
 }
 
 .transformar-relacao {
-    font-family: 'Raleway', sans-serif; 
-    font-size: 36px; 
-    color: #2A3D2A; 
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .jornada-nutricionista {
-    font-family: 'Poppins', sans-serif; 
-    font-size: 16px; 
-    color: #333333; 
-    margin-top: 10px;
-    padding: 0;
-    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
 .footer {

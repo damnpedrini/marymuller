@@ -12,7 +12,6 @@ body{
 }
 
 .container{
-    max-width: 1440px;
     padding: 0 5%;
     margin: 0 auto;
 }
@@ -178,7 +177,36 @@ main .container{
     color: white;
     font-size: 12px;
     text-align: right;
+    font-weight: 300;
 }
+
+/* css dos serviços */
+.servicos{
+    display: flex;
+    min-height: 85vh;
+}
+
+.servicos-text{
+    width: 50%;
+}
+
+.servicos-img{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.servico-img-fundo{
+    background-image: url('../img/Mask\ group.svg');
+    background-color: #1c352e;
+    width: 26%;
+    border-radius: 8px;
+}
+
+.servico-img-fundo img{
+}
+
 
 
 

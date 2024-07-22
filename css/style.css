@@ -1,3 +1,4 @@
+/* css base */
 * {
     margin: 0;
     padding: 0;
@@ -207,38 +208,177 @@ main .container {
 }
 
 .sobre-a-nutri {
-    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    width: 150px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Permite ajuste automático da altura */
+    left: 112px;
+    top: 973px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 35px;
-    color: #F1F1F1;
-    text-transform: uppercase;
-    margin: 0;
+    font-weight: 400;
+    font-size: 18px; /* Novo tamanho da fonte */
+    line-height: 24px; /* Ajustado conforme o novo tamanho da fonte */
+    color: #898989;
+    white-space: nowrap; /* Impede quebra de linha */
 }
 
 .transformar-relacao {
-    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    width: 489px;
+    height: 162px;
+    left: 112px;
+    top: 994px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400; /* Peso normal, sem negrito */
     font-size: 36px;
-    line-height: 44px;
-    background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    line-height: 54px;
+    color: #000000;
 }
 
 .jornada-nutricionista {
-    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 520px;
+    height: 135px;
+    left: 112px;
+    top: 1180px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
 }
+
+/* Group 5 */
+.group-5 {
+    position: absolute;
+    width: 466px;
+    height: 67px;
+    left: 127px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.consultorio {
+    position: absolute;
+    width: 208px;
+    height: 67px;
+    left: 385px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #898989;
+    opacity: 0.6;
+}
+
+.acompanhamento {
+    position: absolute;
+    width: 208px;
+    height: 67px;
+    left: 127px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+/* Group 4 */
+.group-4 {
+    position: absolute;
+    width: 480px;
+    height: 67px;
+    left: 113px;
+    top: 1509px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.cta-button .text {
+
+position: absolute;
+width: 256px;
+height: 53px;
+left: 113px;
+top: 1680px;
+
+
+/* Rectangle 7 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(57, 144, 121, 0.15);
+backdrop-filter: blur(7.5px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+
+/* Agende sua consulta */
+
+position: absolute;
+left: 7.03%;
+right: 34.77%;
+top: 30.19%;
+bottom: 30.19%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 74.61%;
+right: 7.03%;
+top: 50.94%;
+bottom: 49.06%;
+
+background: #000000;
+border: 0.8px solid #000000;
+
+}
+
+.cta-button .arrow {
+    box-sizing: border-box;
+    position: absolute;
+    left: 74.61%;
+    right: 7.03%;
+    top: 50.94%;
+    bottom: 49.06%;
+    background: #000000;
+    border: 0.8px solid #000000;
+}
+
 
 .footer {
     background-color: #F1F1F1;

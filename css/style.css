@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +6,16 @@
     list-style: none;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
     padding: 0 5%;
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 2.7rem 0;
     max-height: 100%;
 }
@@ -26,7 +25,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
@@ -73,10 +72,8 @@ nav ul a:hover {
     background-color: transparent;
 }
 
-
-/* css pagina principal*/
-
-main .container{
+/* css pagina principal */
+main .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,87 +82,106 @@ main .container{
     margin: 0;
 }
 
-.main-text{
-    padding: 0%;
-    margin-top: 0px;
+.main-text {
+    padding: 0;
+    margin-top: 0;
     width: 40%;
     color: white;
     margin-left: 80px;
     margin-bottom: 100px;
+    position: relative; 
 }
 
-.main-text p{
-    font-size: 12px;
+.main-text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
 .main-text h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    background: linear-gradient(to bottom, white, rgba(103, 194, 103, 0.995));
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0;
+    padding: 0;
 }
 
-
 .main-text a {
-    background-color: #4e4329;
+    position: relative;
+    width: 256.71px;
+    height: 53px;
+    background: rgba(221, 120, 51, 0.3); 
+    backdrop-filter: blur(7.5px); 
+    border-radius: 10px;
     display: flex;
-    width: 40%;
-    padding: 8px 0;
-    border-radius: 6px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.main-text a p{
     text-align: center;
-    font-weight: 100;
-    font-size: 10px;
+    margin-top: 20px; 
 }
 
-.main-text a img{
+.main-text a p {
+    font-weight: 100;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.main-text a img {
     width: 30px;
     margin-left: 16px;
 }
 
-.main-text a:hover{
+.main-text a:hover {
     transform: scale(1.06);
 }
 
-.main-img{
-    width: 40%;
+.main-img {
+    width: 50%;
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo em coluna */
+    flex-direction: column; 
     justify-content: flex-end; 
     align-items: center;
 }
 
-.main-img img{
+.main-img img {
     width: 94%;
-    margin-top: auto; /* Empurra a imagem para o final */
+    margin-top: auto; 
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
-.main-horario{
+.main-horario {
     width: 20%;
     justify-content: center;
     margin-right: 80px;
     margin-bottom: 130px;
 }
 
-.main-horario .horario-fundo{
+.main-horario .horario-fundo {
     background-color: #3a5d5451;
     padding: 10px;
     border-radius: 10px;
     width: 90%;
 }
 
-.main-horario h2{
+.main-horario h2 {
     font-size: 14px;
     color: white;
     font-weight: 300;
@@ -173,7 +189,7 @@ main .container{
     margin-bottom: 12px;
 }
 
-.main-horario p{
+.main-horario p {
     color: white;
     font-size: 12px;
     text-align: right;
@@ -181,37 +197,28 @@ main .container{
 }
 
 /* css dos serviços */
-.servicos{
+.servicos {
     display: flex;
     min-height: 85vh;
 }
 
-.servicos-text{
+.servicos-text {
     width: 50%;
 }
 
-.servicos-img{
+.servicos-img {
     width: 50%;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
-.servico-img-fundo{
+.servico-img-fundo {
     background-image: url('../img/Mask\ group.svg');
     background-color: #1c352e;
     width: 26%;
     border-radius: 8px;
 }
-
-.servico-img-fundo img{
-}
-
-
-
-
-
-
 
 .footer {
     background-color: #F1F1F1;

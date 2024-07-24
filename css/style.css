@@ -16,7 +16,7 @@ body {
 }
 
 section {
-    padding: 2.5em 0;
+    padding: 2.8em 0;
     max-height: 100%;
 }
 
@@ -219,11 +219,9 @@ main .container > *:not(.main-img) {
 .servicos .servicos-text h1{
     opacity: 0.6;
     font-size: 16px;
-    
 }
 
 .servicos-text h2{
-    font-family: Poppins;
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -310,8 +308,49 @@ main .container > *:not(.main-img) {
 /* css metodos e estrategias*/
 
 .metodos .container{
+    padding: 0 8% 0 8%;
     min-height: 100vh;
 }
+
+.metodos-text h1 {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.metodos-display{
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+.metodos-text .metodos-display h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 26px;
+    margin-right: auto; 
+}
+
+.metodos-text h2 .destaque {
+    color: #dd7833;
+}
+
+.metodos-text .metodos-display b{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    opacity: 0.8;
+}
+
+.metodos-text p {
+    font-size: 16px;
+    width: 44%;
+}
+
+
+
 
 .section{
     background-color: black;

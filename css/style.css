@@ -1,5 +1,5 @@
-
-*{
+/* css base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,17 +7,16 @@
     list-style: none;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-.container{
-    padding: 0 5%;
+.container {
     margin: 0 auto;
 }
 
-section{
-    padding: 2.7rem 0;
+section {
+    padding: 2.5em 0;
     max-height: 100%;
 }
 
@@ -26,12 +25,17 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
 /* css navbar */
+
+header .container{
+    padding: 0 5%;
+}
+
 header .logo {
     display: flex;
     align-items: center;
@@ -50,168 +54,268 @@ header nav {
     padding: 20px 10px 20px 20px;
 }
 
-nav ul {
+.navbar {
     display: flex;
     align-items: center;
 }
 
-nav ul a {
+.navbar a {
     color: white;
-    margin: 0 16px;
+    justify-content: space-between;
+    margin: 0 36px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     cursor: pointer;
 }
 
-nav ul a:first-child {
-    color: #DD7833;
-}
-
-nav ul a:hover {
+.navbar a:hover {
     color: #DD7833;
     background-color: transparent;
 }
 
+.navbar a.active {
+    color: #DD7833;
+}
 
-/* css pagina principal*/
-
-main .container{
+/* css pagina principal */
+main .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     min-height: 85vh;
     padding: 0;
     margin: 0;
 }
 
-.main-text{
-    padding: 0%;
-    margin-top: 0px;
+main .container > *:not(.main-img) {
+    align-self: center;
+}
+
+.main-text {
+    padding: 0;
+    margin-top: 0;
     width: 40%;
     color: white;
     margin-left: 80px;
     margin-bottom: 100px;
+    position: relative; 
 }
 
-.main-text p{
-    font-size: 12px;
+.main-text p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
 .main-text h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    background: linear-gradient(to bottom, white, rgba(103, 194, 103, 0.995));
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 72px;
+    background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
-
 .main-text a {
-    background-color: #4e4329;
+    position: relative;
+    width: 256.71px;
+    height: 53px;
+    background: rgba(221, 120, 51, 0.3); 
+    backdrop-filter: blur(7.5px); 
+    border-radius: 10px;
     display: flex;
-    width: 40%;
-    padding: 8px 0;
-    border-radius: 6px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.main-text a p{
     text-align: center;
-    font-weight: 100;
-    font-size: 10px;
+    margin-top: 20px; 
 }
 
-.main-text a img{
+.main-text a p {
+    font-weight: 100;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.main-text a img {
     width: 30px;
     margin-left: 16px;
 }
 
-.main-text a:hover{
+.main-text a:hover {
     transform: scale(1.06);
 }
 
-.main-img{
-    width: 40%;
+.main-img {
+    width: 50%;
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo em coluna */
+    flex-direction: column; 
     justify-content: flex-end; 
     align-items: center;
 }
 
-.main-img img{
-    width: 94%;
-    margin-top: auto; /* Empurra a imagem para o final */
+.main-img img {
+    width: 84%;
+    margin-top: auto; 
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
-.main-horario{
+.main-horario {
     width: 20%;
     justify-content: center;
     margin-right: 80px;
     margin-bottom: 130px;
 }
 
-.main-horario .horario-fundo{
+.main-horario .horario-fundo {
     background-color: #3a5d5451;
     padding: 10px;
     border-radius: 10px;
     width: 90%;
 }
 
-.main-horario h2{
+.main-horario h2 {
     font-size: 14px;
     color: white;
     font-weight: 300;
-    text-align: center;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
-.main-horario p{
-    color: white;
+.main-horario p {
     font-size: 12px;
-    text-align: right;
-    font-weight: 300;
+    color: white;
+    margin: 0;
 }
 
-/* css dos serviços */
-.servicos{
+/* css section serviços */
+.servicos .container{
     display: flex;
-    min-height: 85vh;
+    justify-content: center;
+    padding: 0 0 0 8%;
+    min-height: 90vh;
 }
 
-.servicos-text{
+.servicos-text {
+    margin-top: 0;
     width: 50%;
 }
 
-.servicos-img{
-    width: 50%;
+.servicos .servicos-text h1{
+    opacity: 0.6;
+    font-size: 16px;
+    
+}
+
+.servicos-text h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 26px;
+}
+
+.servicos-text h2 .destaque {
+    color: #dd7833; /* Muda a cor do texto para laranja */
+}
+
+.servicos-text p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-align: justify;
+    padding: 0 5% 0 0;
+}
+
+.tipos-servicos {
+    margin-top: 80px;
+    display: flex;
+}
+
+.pequena-linha {
+    width: 2px;
+    height: 58px;
+    background-color: #dd7833;
+    border-radius: 0.5px 0px 0px 0px;
+    text-align: left;
+    justify-content: center;
     align-items: center;
+    margin-right: 14px;
+}
+
+.servico-texto {
+    display: flex;
+}
+
+.servico-texto b:first-of-type {
+    margin-right: 60px;
+    font-weight: 400;
+    line-height: 2.0;
+}
+
+.servico-texto b .segundoB{
+    opacity: 0.6;
+    font-weight: 400;
+    line-height: 2.0;
+}
+
+.servicos-text button{
+    width: 240px;
+    height: 53px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 80px;
+    background-color: #c9ede1;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
     text-align: center;
     justify-content: center;
 }
 
-.servico-img-fundo{
-    background-image: url('../img/Mask\ group.svg');
-    background-color: #1c352e;
-    width: 26%;
-    border-radius: 8px;
+.seta-button{
+    width: 18%;
+    margin: 0 0 0 14px;
 }
 
-.servico-img-fundo img{
+.servicos-img{
+    width: 46%;
+    text-align: center;
+    align-items: center;
+    padding: 4% 0 0 0;
 }
 
+.servicos-img img{
+    width: 80%;
+}
 
+/* css metodos e estrategias*/
 
+.metodos .container{
+    min-height: 100vh;
+}
 
-
-
+.section{
+    background-color: black;
+}
 
 .footer {
     background-color: #F1F1F1;

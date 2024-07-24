@@ -349,7 +349,32 @@ main .container > *:not(.main-img) {
     width: 44%;
 }
 
+.metodos-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.metodos-cards .cards{
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 40px 40px 0;
+}
+
+.metodos-cards .cards .h1{
+    margin: 0px 0 10px 0;
+    font-weight: 600;
+    color: black;
+}
+
+.metodos-cards .cards p{
+    color: black;
+    margin-bottom: 20px;
+}
 
 
 .section{

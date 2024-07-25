@@ -308,13 +308,14 @@ main .container > *:not(.main-img) {
 /* css metodos e estrategias*/
 
 .metodos .container{
-    padding: 0 8% 0 8%;
-    min-height: 100vh;
+    padding: 0 8% 0 10%;
+    min-height: 90vh;
 }
 
 .metodos-text h1 {
     opacity: 0.6;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .metodos-display{
@@ -342,39 +343,72 @@ main .container > *:not(.main-img) {
     font-weight: 400;
     text-align: left;
     opacity: 0.8;
+    margin-right: 8%;
 }
 
 .metodos-text p {
     font-size: 16px;
     width: 44%;
+    margin-bottom: 30px;
 }
 
-.metodos-cards{
+.metodos-box{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-}
-
-.metodos-cards .cards{
-    justify-content: center;
     align-items: center;
-    width: 46%;
-    padding: 30px;
-    background-color: #f4f4f4;
-    border-radius: 20px;
-    margin: 0 40px 40px 0;
 }
 
-.metodos-cards .cards .h1{
+.metodos-box .box {
+    width: 486px; /* Ajuste para garantir que dois boxes caibam em uma linha */
+    height: 293px;
+    padding: 20px 30px 40px 30px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0 30px 30px 0;
+    box-sizing: border-box; /* Garantir que padding seja incluído na largura total */
+}
+
+.metodos-box .box:first-child{
+    background: linear-gradient(258.78deg, rgba(42, 76, 67, 0.82) -18.38%, #2A4C43 101.21%);
+}
+
+.metodos-box .box h2 {
+    top: 0;
+    padding: 0;
+    margin: 0 0;
+    color: #777777;
+    font-size: 64px;
+    font-weight: 100;
+}
+
+.metodos-box .titulo {
     margin: 0px 0 10px 0;
-    font-weight: 600;
-    color: black;
+    font-weight: 100;
+    color: #777777;
+    font-size: 26px;
 }
 
-.metodos-cards .cards p{
-    color: black;
-    margin-bottom: 20px;
+.metodos-box .box p {
+    color: #777777;
+    font-weight: 100;
 }
+
+/* Estilo específico para o primeiro item */
+.metodos-box .box:first-child h2,
+.metodos-box .box:first-child .titulo,
+.metodos-box .box:first-child p {
+    color: #FFFFFF; /* Cor branca */
+}
+
+.divisoria img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 .section{

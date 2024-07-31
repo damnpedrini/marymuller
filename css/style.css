@@ -12,11 +12,12 @@ body {
 }
 
 .container {
+    padding: 0 5%;
     margin: 0 auto;
 }
 
 section {
-    padding: 2.8em 0;
+    padding: 2.7rem 0;
     max-height: 100%;
 }
 
@@ -89,10 +90,6 @@ main .container {
     margin: 0;
 }
 
-main .container > *:not(.main-img) {
-    align-self: center;
-}
-
 .main-text {
     padding: 0;
     margin-top: 0;
@@ -119,7 +116,7 @@ main .container > *:not(.main-img) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 58px;
+    font-size: 64px;
     line-height: 72px;
     background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
     -webkit-background-clip: text;
@@ -172,7 +169,7 @@ main .container > *:not(.main-img) {
 }
 
 .main-img img {
-    width: 84%;
+    width: 94%;
     margin-top: auto; 
     margin: 0;
     padding: 0;
@@ -206,263 +203,189 @@ main .container > *:not(.main-img) {
 }
 
 /* css section serviços */
-.servicos .container{
+.servicos {
     display: flex;
-    justify-content: center;
-    padding: 0 0 0 8%;
-    min-height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .servicos-text {
-    margin-top: 0;
     width: 50%;
 }
 
-.servicos .servicos-text h1{
-    opacity: 0.6;
-    font-size: 16px;
-}
-
-.servicos-text h2{
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: left;
-    margin-bottom: 26px;
-}
-
-.servicos-text h2 .destaque {
-    color: #dd7833; /* Muda a cor do texto para laranja */
-}
-
-.servicos-text p{
-    font-family: Poppins;
-    font-size: 16px;
+.sobre-a-nutri {
+    position: absolute;
+    width: 150px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Permite ajuste automático da altura */
+    left: 112px;
+    top: 973px;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
+    font-size: 18px; /* Novo tamanho da fonte */
+    line-height: 24px; /* Ajustado conforme o novo tamanho da fonte */
+    color: #898989;
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+.transformar-relacao {
+    position: absolute;
+    width: 489px;
+    height: 162px;
+    left: 112px;
+    top: 994px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400; /* Peso normal, sem negrito */
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.jornada-nutricionista {
+    position: absolute;
+    width: 520px;
+    height: 135px;
+    left: 112px;
+    top: 1180px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 34px;
-    text-align: left;
-    text-align: justify;
-    padding: 0 5% 0 0;
+    color: #000000;
 }
 
-.tipos-servicos {
-    margin-top: 80px;
-    display: flex;
-}
-
-.pequena-linha {
-    width: 2px;
-    height: 58px;
-    background-color: #dd7833;
-    border-radius: 0.5px 0px 0px 0px;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    margin-right: 14px;
-}
-
-.servico-texto {
-    display: flex;
-}
-
-.servico-texto b:first-of-type {
-    margin-right: 60px;
+/* Group 5 */
+.group-5 {
+    position: absolute;
+    width: 466px;
+    height: 67px;
+    left: 127px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
-    line-height: 2.0;
-}
-
-.servico-texto b .segundoB{
-    opacity: 0.6;
-    font-weight: 400;
-    line-height: 2.0;
-}
-
-.servicos-text button{
-    width: 240px;
-    height: 53px;
-    margin-top: 80px;
-    background-color: #c9ede1;
-    padding: 16px 0px;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.servicos-text button:hover{
-    transform: scale(1.1);
-}
-
-.seta-button{
-    width: 18%;
-    margin: 0 0 0 14px;
-}
-
-.servicos-img{
-    width: 46%;
-    text-align: center;
-    align-items: center;
-    padding: 4% 0 0 0;
-}
-
-.servicos-img img{
-    width: 80%;
-}
-
-/* css metodos e estrategias*/
-
-.metodos .container{
-    padding: 0 8% 0 10%;
-    min-height: 90vh;
-}
-
-.metodos-text h1 {
-    opacity: 0.6;
     font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.consultorio {
+    position: absolute;
+    width: 208px;
+    height: 67px;
+    left: 385px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
-}
-
-.metodos-display{
-    display: flex;
-    justify-content: space-between; 
-    width: 100%;
-}
-.metodos-text .metodos-display h2{
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: left;
-    margin-bottom: 26px;
-    margin-right: auto; 
-}
-
-.metodos-text h2 .destaque {
-    color: #dd7833;
-}
-
-.metodos-text .metodos-display b{
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    opacity: 0.8;
-    margin-right: 8%;
-}
-
-.metodos-text p {
     font-size: 16px;
-    width: 44%;
-    margin-bottom: 30px;
+    line-height: 34px;
+    color: #898989;
+    opacity: 0.6;
 }
 
-.metodos-box{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.acompanhamento {
+    position: absolute;
+    width: 208px;
+    height: 67px;
+    left: 127px;
+    top: 1392px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.6;
 }
 
-.metodos-box .box {
-    width: 486px; 
-    height: 293px;
-    padding: 20px 30px 40px 30px;
-    background-color: #ececec;
-    border-radius: 10px;
-    margin: 0 30px 30px 0;
+/* Group 4 */
+.group-4 {
+    position: absolute;
+    width: 480px;
+    height: 67px;
+    left: 113px;
+    top: 1509px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.cta-button .text {
+
+position: absolute;
+width: 256px;
+height: 53px;
+left: 113px;
+top: 1680px;
+
+
+/* Rectangle 7 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(57, 144, 121, 0.15);
+backdrop-filter: blur(7.5px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+
+/* Agende sua consulta */
+
+position: absolute;
+left: 7.03%;
+right: 34.77%;
+top: 30.19%;
+bottom: 30.19%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 74.61%;
+right: 7.03%;
+top: 50.94%;
+bottom: 49.06%;
+
+background: #000000;
+border: 0.8px solid #000000;
+
+}
+
+.cta-button .arrow {
     box-sizing: border-box;
-    cursor: pointer;
+    position: absolute;
+    left: 74.61%;
+    right: 7.03%;
+    top: 50.94%;
+    bottom: 49.06%;
+    background: #000000;
+    border: 0.8px solid #000000;
 }
 
-.metodos-box .box:hover{
-    background: linear-gradient(258.78deg, rgba(42, 76, 67, 0.82) -18.38%, #2A4C43 101.21%);
-}
-
-.metodos-box .box:first-child{
-    background: linear-gradient(258.78deg, rgba(42, 76, 67, 0.82) -18.38%, #2A4C43 101.21%);
-}
-
-.metodos-box .box h2 {
-    top: 0;
-    padding: 0;
-    margin: 0 0;
-    color: #777777;
-    font-size: 64px;
-    font-weight: 100;
-}
-
-.metodos-box .titulo {
-    margin: 0px 0 10px 0;
-    font-weight: 100;
-    color: #777777;
-    font-size: 26px;
-}
-
-.metodos-box .box p {
-    color: #777777;
-    font-weight: 100;
-}
-
-.metodos-box .box:hover h1,
-.metodos-box .box:hover h2,
-.metodos-box .box:hover .titulo,
-.metodos-box .box:hover p {
-    color: #ffffff;
-}
-
-/* Estilo específico para o primeiro item */
-.metodos-box .box:first-child h2,
-.metodos-box .box:first-child .titulo,
-.metodos-box .box:first-child p {
-    color: #FFFFFF; /* Cor branca */
-}
-
-.divisoria {
-    background-image: url('../img/sexy-woman-smiling-medium-shot\ 2.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    margin: 0;
-    padding: 110px 150px;
-}
-
-.divisoria h1 {
-    position: relative;
-    top: -10px; /* Ajuste esse valor conforme necessário */
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 200;
-}
-
-.divisoria button{
-    top: 10px;
-    position: relative;
-    width: 100px;
-    background-color: #dd77337c;
-    padding: 16px 24px 16px 16px;
-    border: none;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.divisoria button:hover{
-    transform: scale(1.1);
-}
-
-.divisoria button svg{
-    width: 60%;
-}
-
-
-
-.section{
-    background-color: black;
-}
 
 .footer {
     background-color: #F1F1F1;

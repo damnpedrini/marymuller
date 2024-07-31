@@ -1,0 +1,24 @@
+
+/*css responsivo desktop */
+
+/*css responsivo desktop padrão*/
+@media (width >= 1200px){
+    .metodos-box .box {
+        width: 486px; 
+    }
+}
+
+@media (width >= 1400px){
+    .metodos-box .box {
+        width: 540px; 
+    }
+}
+
+/*css responsivo desktop garnde*/
+@media (width >=  1500px){
+    .metodos-box .box {
+        width: 600px; 
+    }
+}
+
+/*css responsivo celulares */

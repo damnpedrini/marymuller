@@ -67,11 +67,13 @@ header nav {
     font-size: 14px;
     display: block;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .navbar a:hover {
     color: #DD7833;
     background-color: transparent;
+    transform: scale(1.1);
 }
 
 .navbar a.active {
@@ -278,8 +280,6 @@ main .container > *:not(.main-img) {
 .servicos-text button{
     width: 240px;
     height: 53px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 80px;
     background-color: #c9ede1;
     padding: 16px 0px;
@@ -287,6 +287,12 @@ main .container > *:not(.main-img) {
     border-radius: 8px;
     text-align: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.servicos-text button:hover{
+    transform: scale(1.1);
 }
 
 .seta-button{
@@ -359,13 +365,18 @@ main .container > *:not(.main-img) {
 }
 
 .metodos-box .box {
-    width: 486px; /* Ajuste para garantir que dois boxes caibam em uma linha */
+    width: 486px; 
     height: 293px;
     padding: 20px 30px 40px 30px;
-    background-color: #e3e3e3;
+    background-color: #ececec;
     border-radius: 10px;
     margin: 0 30px 30px 0;
-    box-sizing: border-box; /* Garantir que padding seja incluído na largura total */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.metodos-box .box:hover{
+    background: linear-gradient(258.78deg, rgba(42, 76, 67, 0.82) -18.38%, #2A4C43 101.21%);
 }
 
 .metodos-box .box:first-child{
@@ -393,6 +404,13 @@ main .container > *:not(.main-img) {
     font-weight: 100;
 }
 
+.metodos-box .box:hover h1,
+.metodos-box .box:hover h2,
+.metodos-box .box:hover .titulo,
+.metodos-box .box:hover p {
+    color: #ffffff;
+}
+
 /* Estilo específico para o primeiro item */
 .metodos-box .box:first-child h2,
 .metodos-box .box:first-child .titulo,
@@ -400,14 +418,45 @@ main .container > *:not(.main-img) {
     color: #FFFFFF; /* Cor branca */
 }
 
-.divisoria img{
+.divisoria {
+    background-image: url('../img/sexy-woman-smiling-medium-shot\ 2.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 110px 150px;
 }
 
+.divisoria h1 {
+    position: relative;
+    top: -10px; /* Ajuste esse valor conforme necessário */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.divisoria button{
+    top: 10px;
+    position: relative;
+    width: 100px;
+    background-color: #dd77337c;
+    padding: 16px 24px 16px 16px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.divisoria button:hover{
+    transform: scale(1.1);
+}
+
+.divisoria button svg{
+    width: 60%;
+}
 
 
 

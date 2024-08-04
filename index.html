@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mary Muller é uma nutricionista dedicada a transformar sua relação com a comida e a saúde. Agende uma consulta para começar sua transformação hoje mesmo!" />
+    <meta name="keywords" content="nutricionista, consulta, saúde, alimentação, transformação" />
+    <meta name="author" content="Mary Muller" />
+    <meta property="og:title" content="Mary Muller - Nutricionista" />
+    <meta property="og:description" content="Transforme sua relação com a comida e a saúde com a ajuda de Mary Muller. Agende uma consulta e inicie sua jornada de transformação." />
+    <meta property="og:image" content="img/og-image.jpg" /> <!-- Atualize com o caminho da sua imagem -->
+    <meta property="og:url" content="https://www.seusite.com" /> <!-- Atualize com a URL real do seu site -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mary Muller - Nutricionista" />
+    <meta property="og:locale" content="pt_BR" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivo.css">
-    <title>Mary Muller</title>
+    <title>Mary Muller - Nutricionista | Transforme sua vida</title>
 </head>
 <body>
 
@@ -18,15 +28,15 @@
             <div class="container">
                 <nav>
                     <div class="logo">
-                        <img src="img/Logo 2.svg" alt="Logo">
+                        <img src="img/Logo 2.svg" alt="Logo Mary Muller">
                     </div>
                     
                     <ul class="navbar">
-                        <a href="#section1" class="home">Home</a>
-                        <a href="#section2">Sobre</a>
-                        <a href="#section3">Serviços</a>
-                        <a href="#section4">Testemunhos</a>
-                        <a href="#section5">Contato</a>
+                        <li><a href="#section1" class="home">Home</a></li>
+                        <li><a href="#section2">Sobre</a></li>
+                        <li><a href="#section3">Serviços</a></li>
+                        <li><a href="#section4">Testemunhos</a></li>
+                        <li><a href="#section5">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,9 +49,9 @@
                 <div class="main-text">
                     <p>Agende uma consulta comigo e comece a</p>
                     <h1>transformar sua<br>vida hoje!</h1>
-                    <a>
+                    <a href="#section5">
                         <p>agende sua consulta</p>
-                        <img src="img/seta.svg">
+                        <img src="img/seta.svg" alt="Seta de agendamento">
                     </a>  
                 </div>
 
@@ -64,7 +74,8 @@
     </div>
 
     <!-- section serviços -->
-    <section>
+        <!-- section serviços -->
+    <section id="section2">
         <div class="servicos">
             <div class="container">
                 <div class="servicos-text">
@@ -81,13 +92,13 @@
                         </div>
                     </div> 
 
-                    <button>Agente sua consulta<span><svg class="seta-button" viewBox="0 0 49 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button>Agende sua consulta<span><svg class="seta-button" viewBox="0 0 49 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.835693 2.6C0.614779 2.6 0.435693 2.77909 0.435693 3C0.435693 3.22091 0.614779 3.4 0.835693 3.4V2.6ZM48.2495 3.28284C48.4057 3.12663 48.4057 2.87337 48.2495 2.71716L45.7039 0.171573C45.5477 0.0153632 45.2944 0.0153632 45.1382 0.171573C44.982 0.327783 44.982 0.581048 45.1382 0.737258L47.4009 3L45.1382 5.26274C44.982 5.41895 44.982 5.67222 45.1382 5.82843C45.2944 5.98464 45.5477 5.98464 45.7039 5.82843L48.2495 3.28284ZM0.835693 3.4H47.9666V2.6H0.835693V3.4Z" fill="black"/>
                         </svg></span></button>
                 </div>
     
                 <div class="servicos-img">
-                    <img src="img/mulher2.PNG"> 
+                    <img src="img/mulher2.PNG" alt="Nutricionista Mary Muller"> 
                 </div>
             </div>
         </div>
@@ -95,7 +106,7 @@
     <!-- section serviços -->
 
     <!-- section metodos e estrategias -->
-    <section>
+    <section id="section3">
         <div class="metodos">
             <div class="container">
                 <!-- texto dos metodos-->
@@ -105,14 +116,14 @@
                         <h2>MÉTODOS E <span class="destaque">ESTRATÉGIAS</span></h2>
                         <b>DÚVIDAS?</b>
                     </div>
-                    <P>Estratégias Nutricionais e Diéticas para você alcançar seus objetivos de maneira saudável.</P>
+                    <p>Estratégias Nutricionais e Diéticas para você alcançar seus objetivos de maneira saudável.</p>
                 </div>
                 <!-- final do texto dos metodos-->
 
                 <div class="metodos-box">
                     <!--box-->
                     <div class="box">
-                        <h2>01</span></h2>
+                        <h2>01</h2>
                         <h3 class="titulo">Avaliação nutricional</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     </div>
@@ -138,99 +149,35 @@
     </section>
     <!-- section metodos e estrategias -->
 
-    <!--section divisoria-->
-    <section>
-        <div class="divisoria">
-            <h1>COMECE SUA TRANSFORMAÇÃO</h1>
-            <button>
-                <svg class="seta-button" viewBox="0 0 49 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.835693 2.6C0.614779 2.6 0.435693 2.77909 0.435693 3C0.435693 3.22091 0.614779 3.4 0.835693 3.4V2.6ZM48.2495 3.28284C48.4057 3.12663 48.4057 2.87337 48.2495 2.71716L45.7039 0.171573C45.5477 0.0153632 45.2944 0.0153632 45.1382 0.171573C44.982 0.327783 44.982 0.581048 45.1382 0.737258L47.4009 3L45.1382 5.26274C44.982 5.41895 44.982 5.67222 45.1382 5.82843C45.2944 5.98464 45.5477 5.98464 45.7039 5.82843L48.2495 3.28284ZM0.835693 3.4H47.9666V2.6H0.835693V3.4Z" stroke="white" stroke-width="1"/>
-                </svg>
-            </button>
-        </div>
-    </section>
-
-    <!--section testemunhos-->
-    <section>
-        <div class="testemunhos">
-            <b>TESTEMUNHOS DOS</b>
-            <div class="container">
-                
-                <div class="testemunhos-text1">
-                    <h1>MEUS <span class="destaque">QUERIDOS PACIENTES</span></h1>
-                    <p>Minha satisfação profissional vem diretamente da conquista de meus pacientes! Conheça alguns relatos emocionantes de pessoas que vivem uma nova vida.</p>
-                </div>
-
-                <div class="testemunhos-text2">
-                    <p>Fazem 6 meses que resolvi mudar meu estilo de vida e já estou conseguindo alcançar meus objetivos, graças ao acompanhamento e o apoio da Mary que tem sido uma peça 
-                        fundamental no meu processo de mudança rumo a melhor qualidade de vida.</p>
-                        <h2>Eduardo Maneira</h2>
-                </div>
-            </div>  
-        </div>
-    </section>
-
-    <!--section contatos-->
-    <section>
-        <div class="contato">
-            <div class="container">
-                <div class="contato-text">
-                    <b>ENTRE EM CONTATO</b>
-                    <h1>AGENDE SUA CONSULTA</h1>
-                    <div class="contato-box">
-                        <div class="box">
-                            <img src="img/marcador.png" alt="marcador">
-                            <div>
-                                <h1>Whatsapp</h1>
-                                <h2>(41) 99565-8533</h2><br>
-                                <button class="botao">Conversar</button>
-                            </div>
-                            
-                        </div>
-    
-                        <div class="box">
-                            <img src="img/marcador.png" alt="marcador">
-                            <div>
-                                <h1>Whatsapp</h1>
-                                <h2>(41) 99565-8533</h2>
-                                <button>Conversar</button>
-                            </div>
-                            
-                        </div>
-    
-                        <div class="box">
-                            <img src="img/marcador.png" alt="marcador">
-                            <div>
-                                <h1>Whatsapp</h1>
-                                <h2>(41) 99565-8533</h2>
-                                <button>Conversar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contato-img">
-                    <img src="img/Mary.png" alt="nutricionista">
+    <!-- section contato -->
+    <section id="section4">
+        <div class="container">
+            <div class="contato">
+                <h1>CONTATO</h1>
+                <p>
+                    Para mais informações e agendamentos, entre em contato diretamente pelo e-mail ou telefone. Estou aqui para ajudar você a iniciar sua jornada para uma vida mais saudável.
+                </p>
+                <div class="contato-info">
+                    <p><strong>Email:</strong> contato@marymuller.com</p>
+                    <p><strong>Telefone:</strong> (41) 99999-9999</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- section contato -->
 
-    <section id="section2" class="section">
-        <div class="section-content">
-            <h2>Sobre Nós</h2>
-            <p>Bem-vindo à nossa página de informações. Aqui, você encontrará detalhes sobre nossos serviços e como podemos ajudá-lo.</p>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mary Muller - Todos os direitos reservados.</p>
         </div>
-    </section>
-
-    <div class="footer">
-        © 2024 Mary Muller. Todos os direitos reservados.
-    </div>
-
+    </footer>
+    <!-- footer -->
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const navbarLinks = document.querySelectorAll('.navbar a');
-            const sections = document.querySelectorAll('.section');
+            const sections = document.querySelectorAll('section'); // Correção para selecionar todas as seções
             
             function setActiveLink() {
                 let index = sections.length;

@@ -4,20 +4,23 @@
 /*css responsivo desktop padrão*/
 @media (width >= 1200px){
     .metodos-box .box {
-        width: 486px; 
+        width: 522px; 
+        height: 270px;
     }
 }
 
 @media (width >= 1400px){
     .metodos-box .box {
-        width: 540px; 
+        width: 581px; 
+        height: 270px;
     }
 }
 
 /*css responsivo desktop garnde*/
 @media (width >=  1500px){
     .metodos-box .box {
-        width: 600px; 
+        width: 655px; 
+        height: 290px;
     }
 }
 

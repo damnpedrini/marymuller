@@ -4,14 +4,14 @@
 /*css responsivo desktop padrão*/
 @media (width >= 1200px){
     .metodos-box .box {
-        width: 522px; 
+        width: 560px; 
         height: 270px;
     }
 }
 
 @media (width >= 1400px){
     .metodos-box .box {
-        width: 581px; 
+        width: 623px; 
         height: 270px;
     }
 }
@@ -19,8 +19,8 @@
 /*css responsivo desktop garnde*/
 @media (width >=  1500px){
     .metodos-box .box {
-        width: 655px; 
-        height: 290px;
+        width: 702px; 
+        height: 300px;
     }
 }
 

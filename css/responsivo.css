@@ -1,29 +1,60 @@
 /*css responsivo mobile*/
 
-@media (width <= 960px){
+@media (max-width: 960px){
+
+    .menu-icon{
+        display: block;
+    }
+
     .navbar{
-        display: none;
+        width: 100%;
+        position: fixed;
+        background: var(--verde-escuro);
+        top: 0;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
     }
 
     main .container{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .main-text{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-text p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .main-text h1{
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .main-text div{
         width: 100%;
     }
-
-    .main-text h1{
-        font-size: 40px;
-    }
-
-    .main-img{
+    
+    .main-text div a{
         width: 100%;
     }
 
     .main-horario{
         display: none;
     }
+
+    .main-img{
+        width: 100%;
+    }
+
+    
 }
 
 

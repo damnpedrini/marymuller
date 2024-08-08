@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* css base */
 * {
     margin: 0;
@@ -472,7 +474,7 @@ main .container > *:not(.main-img) {
 }
 
 .testemunhos b{
-    padding: 0 0 0 8%;
+    padding: 0 0 0 5%;
     opacity: 0.6;
     font-size: 16px;
     font-weight: 400;
@@ -513,7 +515,7 @@ main .container > *:not(.main-img) {
 .testemunhos-text2 p{
     font-family: Poppins;
     font-size: 16px;
-    font-weight: 200;
+    opacity: 90%;
     line-height: 34px;
     text-align: left;
     text-align: justify;
@@ -540,7 +542,7 @@ main .container > *:not(.main-img) {
 }
 .contato-text {
     display: flex;
-    flex-direction: column; /* Para alinhar os elementos em coluna */
+    flex-direction: column; 
     width: 50%;
 }
 
@@ -574,10 +576,20 @@ main .container > *:not(.main-img) {
     box-sizing: border-box;
     flex-direction: column;
     height: 40%;
+    transition: 0.3s;
+}
+
+.contato-box .box:nth-child(2),
+.contato-box .box:nth-child(3){
+    background-color: white;
 }
 
 .contato-box .box:not(:first-child){
     opacity: 70%;
+}
+
+.contato-box .box:hover{
+    opacity: 100%;
 }
 
 .contato-box .box:first-child {
@@ -592,7 +604,7 @@ main .container > *:not(.main-img) {
 }
 
 .contato-box .box:not(:first-child) .texto-marcador {
-    margin-left: 20px; /* Adiciona margem à esquerda para os boxes 2 e 3 */
+    margin-left: 20px;
 }
 
 .contato-box .box img {
@@ -625,6 +637,12 @@ main .container > *:not(.main-img) {
     width: 100%;
     text-align: center;
     font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-text .box .botao:hover{
+    background-color: #dd7833;
 }
 
 .contato-text .box button {
@@ -634,7 +652,8 @@ main .container > *:not(.main-img) {
     border: none;
     border-radius: 8px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .contato-img {
@@ -642,9 +661,9 @@ main .container > *:not(.main-img) {
     display: flex;
     border-radius: 30px;
     background-color: rgb(249, 249, 249);
-    justify-content: center; /* Centraliza horizontalmente a imagem */
-    align-items: flex-end;  /* Posiciona a imagem no final do container */
-    padding-bottom: 0; /* Remove padding inferior */
+    justify-content: center; 
+    align-items: flex-end;  
+    padding-bottom: 0; 
 }
 
 .contato-img img {
@@ -652,12 +671,49 @@ main .container > *:not(.main-img) {
     height: auto;
 }
 
-.section{
-    background-color: black;
+/* css da linha divisoria*/
+.linha{
+    padding: 2.8em 0 0 0;
+}
+.linha .linha-divisoria {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #ffffff, #dd7833,#ffeee2 );
+    margin: 0;
 }
 
-.footer {
-    background-color: #F1F1F1;
+footer{
+    padding: 2.0em 5% 0 5%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-section:nth-child(1){
+    text-align: left;
+}
+
+footer .footer-section:nth-child(3){
+    text-align: right;
+}
+
+footer .footer-section p{
+    font-weight: 400;
+    opacity: 80%;
 }

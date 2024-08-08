@@ -9,13 +9,11 @@
     <meta name="author" content="Mary Muller" />
     <meta property="og:title" content="Mary Muller - Nutricionista" />
     <meta property="og:description" content="Transforme sua relação com a comida e a saúde com a ajuda de Mary Muller. Agende uma consulta e inicie sua jornada de transformação." />
-    <meta property="og:image" content="img/og-image.jpg" /> <!-- Atualize com o caminho da sua imagem -->
-    <meta property="og:url" content="https://www.seusite.com" /> <!-- Atualize com a URL real do seu site -->
+    <meta property="og:image" content="img/og-image.jpg" />
+    <meta property="og:url" content="https://www.seusite.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mary Muller - Nutricionista" />
     <meta property="og:locale" content="pt_BR" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <title>Mary Muller - Nutricionista | Transforme sua vida</title>
@@ -193,7 +191,7 @@
                                 <img src="img/marcador.png" alt="marcador">
                                 <div>
                                     <h1>Whatsapp</h1>
-                                    <h2>(41) 99565-8533</h2><br>
+                                    <h2>(41) 99565-8533</h2>
                                 </div>
                             </div>
                             <button class="botao">Conversar</button>
@@ -203,8 +201,8 @@
                             <div class="texto-marcador">
                                 <img src="img/marcador.png" alt="marcador">
                                 <div>
-                                    <h1>Whatsapp</h1>
-                                    <h2>(41) 99565-8533</h2><br>
+                                    <h1>Instagram</h1>
+                                    <h2>@nutrimarymulerr</h2>
                                 </div>
                             </div>
                             <button>Conversar</button>
@@ -214,8 +212,8 @@
                             <div class="texto-marcador">
                                 <img src="img/marcador.png" alt="marcador">
                                 <div>
-                                    <h1>Whatsapp</h1>
-                                    <h2>(41) 99565-8533</h2><br>
+                                    <h1>Localização</h1>
+                                    <h2>R.</h2>
                                 </div>
                             </div>
                             <button>Conversar</button>
@@ -229,50 +227,27 @@
             </div>
         </div>
     </section>
-    
 
-    <section id="section2" class="section">
-        <div class="section-content">
-            <h2>Sobre Nós</h2>
-            <p>Bem-vindo à nossa página de informações. Aqui, você encontrará detalhes sobre nossos serviços e como podemos ajudá-lo.</p>
-        </div>
-    </section>
-
-    <div class="footer">
-        © 2024 Mary Muller. Todos os direitos reservados.
+    <div class="linha">
+        <hr class="linha-divisoria">
     </div>
+    
+    <!--footer da pagina-->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+               <p>Transforme sua vida hoje.</p>
+            </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const navbarLinks = document.querySelectorAll('.navbar a');
-            const sections = document.querySelectorAll('.section');
-            
-            function setActiveLink() {
-                let index = sections.length;
+            <div class="footer-section">
+               <img src="img/Group 69.png" alt="divisoria">
+            </div>
 
-                while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-                if (navbarLinks[index]) {
-                    navbarLinks.forEach(link => link.classList.remove('active'));
-                    navbarLinks[index].classList.add('active');
-                }
-            }
-
-            window.addEventListener('scroll', setActiveLink);
-            setActiveLink();
-
-            navbarLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    window.scrollTo({
-                        top: targetSection.offsetTop,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
+            <div class="footer-section">
+                <img src="img/Group.png" alt="logo sakura">
+                <p>Nutri Maryellen Muller. Todos os direitos resrvados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

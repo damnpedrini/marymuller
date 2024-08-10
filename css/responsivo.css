@@ -2,6 +2,7 @@
 
 @media (max-width: 960px){
 
+    /* css navbar */
     .menu-icon{
         display: block;
     }
@@ -17,6 +18,7 @@
         justify-content: center;
     }
 
+    /*css main principal*/
     main .container{
         flex-direction: column;
     }
@@ -30,20 +32,24 @@
     }
 
     .main-text p{
+        margin-top: 50px;
         text-align: center;
         font-size: 12px;
     }
     .main-text h1{
         font-size: 48px;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .main-text div{
+        display: flex;
         width: 100%;
+        justify-content: center;
     }
     
     .main-text div a{
-        width: 100%;
+        width: 50%;
     }
 
     .main-horario{
@@ -51,10 +57,41 @@
     }
 
     .main-img{
+        display: none;
+        /*margin-top: 0;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;*/
+    }
+    /*
+    .main-img img{
+        margin-left: 60px;
+    }*/
+
+    /*css section servicos*/
+    .servicos .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicos-text {
         width: 100%;
     }
 
-    
+    .servicos-text{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .servicos-img{
+        width: 100%;
+    }
+
+    .servicos-img img{
+        width: 100%;
+    }
+
 }
 
 

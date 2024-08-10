@@ -125,7 +125,7 @@ main .container > *:not(.main-img) {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 58px;
+    font-size: 56px;
     line-height: 72px;
     background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
     -webkit-background-clip: text;
@@ -283,7 +283,7 @@ main .container > *:not(.main-img) {
     width: 240px;
     height: 53px;
     margin-top: 80px;
-    background-color: #c9ede1;
+    background-color: #86ffd79c;
     padding: 16px 0px;
     border: none;
     border-radius: 8px;

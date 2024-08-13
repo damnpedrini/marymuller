@@ -21,9 +21,18 @@
     /*css main principal*/
     main .container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        min-height: 100vh;
+    }
+
+    main .container > *:not(.main-img) {
+        align-self:auto;
     }
 
     .main-text{
+        margin-top: 18%;
         margin-left: 0px;
         width: 100%;
         text-align: center;
@@ -32,14 +41,19 @@
     }
 
     .main-text p{
-        margin-top: 50px;
         text-align: center;
-        font-size: 12px;
+        font-size: 20px;
+        font-weight: 500;
     }
     .main-text h1{
         font-size: 48px;
         text-align: center;
         margin-bottom: 30px;
+        line-height: 72px;
+        background: linear-gradient(186.7deg, #FFFFFF 28.87%, rgba(57, 144, 121, 0.63) 157.54%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .main-text div{
@@ -49,24 +63,47 @@
     }
     
     .main-text div a{
-        width: 50%;
+        width: 80%;
+        padding: 30px;
+    }
+
+    .main-text div a p {
+        font-size: 18px;
+    }
+
+    .main-text div a img{
+        width: 60px;
     }
 
     .main-horario{
-        display: none;
+        width: 70%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    .main-horario .horario-fundo {
+        width: 100%;
+        background-color: #3a5d548e;
+        padding: 10px;
+    }
+
+    .main-horario h2 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .main-horario p{
+        margin: 10px 0 10px 0;
+        font-size: 24px;
+        font-weight: 400;
     }
 
     .main-img{
         display: none;
-        /*margin-top: 0;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;*/
     }
-    /*
-    .main-img img{
-        margin-left: 60px;
-    }*/
 
     /*css section servicos*/
     .servicos .container{
@@ -91,17 +128,32 @@
         text-align: left;
     }
 
+    .servicos-text h2{
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .tipos-servicos{
+        display: none;
+    }
+
+    .servico-texto {
+        display: none;
+    }
+
+    .servicos-text button{
+        margin-top: 30px;
+        width: 90%;
+    }
+
     .servicos-img{
         width: 100%;
     }
 
     .servicos-img img{
-        width: 100%;
+        width: 90%;
     }
-
 }
-
-
 
 /*css responsivo desktop */
 
@@ -127,5 +179,3 @@
         height: 300px;
     }
 }
-
-/*css responsivo celulares */

@@ -1,0 +1,75 @@
+
+    
+
+    
+    <!--section contatos-->
+    <section>
+        <div class="contato">
+            <div class="container">
+                <div class="contato-text">
+                    <b>ENTRE EM CONTATO</b>
+                    <h1>AGENDE <span class="destaque">SUA CONSULTA</span></h1>
+                    <div class="contato-box">
+                        <div class="box">
+                            <div class="texto-marcador">
+                                <img src="img/marcador.png" alt="marcador">
+                                <div>
+                                    <h1>Whatsapp</h1>
+                                    <h2>(41) 99565-8533</h2>
+                                </div>
+                            </div>
+                            <button class="botao">Conversar</button>
+                        </div>
+        
+                        <div class="box">
+                            <div class="texto-marcador">
+                                <img src="img/marcador.png" alt="marcador">
+                                <div>
+                                    <h1>Instagram</h1>
+                                    <h2>@nutrimarymulerr</h2>
+                                </div>
+                            </div>
+                            <button>Conversar</button>
+                        </div>
+        
+                        <div class="box">
+                            <div class="texto-marcador">
+                                <img src="img/marcador.png" alt="marcador">
+                                <div>
+                                    <h1>Localização</h1>
+                                    <h2>R.</h2>
+                                </div>
+                            </div>
+                            <button>Conversar</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="contato-img">
+                    <img src="img/Mary.png" alt="nutricionista">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="linha">
+        <hr class="linha-divisoria">
+    </div>
+        
+    <!--footer da pagina-->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+               <p>Transforme sua vida hoje.</p>
+            </div>
+    
+            <div class="footer-section">
+               <img src="img/Group 69.png" alt="divisoria">
+            </div>
+    
+            <div class="footer-section">
+                <img src="img/Group.png" alt="logo sakura">
+                <p>Nutri Maryellen Muller. Todos os direitos resrvados.</p>
+            </div>
+        </div>
+    </footer>

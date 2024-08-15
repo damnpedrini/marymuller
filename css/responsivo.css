@@ -32,7 +32,7 @@
     }
 
     .main-text{
-        margin-top: 18%;
+        margin-top: 6%;
         margin-left: 0px;
         width: 100%;
         text-align: center;
@@ -153,6 +153,142 @@
     .servicos-img img{
         width: 90%;
     }
+
+    .metodos .container{
+       flex-direction: column;
+    }
+
+    .metodos-display {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .metodos-text .metodos-display h2 {
+        font-family: Poppins;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .metodos-text p {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .metodos-box .box {
+        width: 500px; 
+        height: 293px;
+        padding: 20px 30px 40px 30px;
+        margin: 0 0 16px 0;
+        border: none;
+    
+        &:nth-child(1),
+        &:nth-child(3) {
+            margin-right: 0px; /* Define a margem à direita para o 1º e 3º box */
+        }
+    }
+
+    .metodos-box .box h2{
+        font-size: 40px;
+    }
+
+    .metodos-box .titulo {
+        margin: 0px 0 10px 0;
+        font-weight: 100;
+        color: #777777;
+        font-size: 20px;
+    }
+
+    /*css da divisoria*/
+
+    /*css divisoria*/
+    .divisoria {
+        background-image: url('../img/sexy-woman-smiling-medium-shot.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        margin: 0;
+        padding: 30px 30px;
+    }
+
+    .divisoria h1 {
+        text-align: left;
+        top: 0px; /* Ajuste esse valor conforme necessário */
+        left: 0;
+        color: white;
+        font-size: 2.0rem;
+        font-weight: 400;
+    }
+
+    .divisoria button{
+        top: 10px;
+        width: 100px;
+        background-color: #dd77337c;
+        padding: 16px 24px 16px 16px;
+        border: none;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .divisoria button:hover{
+        transform: scale(1.1);
+    }
+
+    .divisoria button svg{
+        width: 60%;
+    }
+
+    .testemunhos{
+        padding: 2% 0 2% 0;
+    }
+    .testemunhos .container{
+        min-height: 40vh;
+        flex-direction: column;
+    }
+
+    .testemunhos-text1{
+        width: 100%;
+        justify-content: center;
+        padding: 0 4% 0 5%;
+    }
+
+    .testemunhos-text1 p{
+        padding: 0;
+    }
+
+    .testemunhos-text2{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .testemunhos-text2 p{
+        padding: 0;
+    }
+
+    .testemunhos-text2 h2{
+        padding: 0;
+    }
+
+    .contato {
+        min-height: 80vh;
+    }
+    .contato .container {
+        padding: 0 5% 0 5%;
+        flex-direction: column;
+    }
+
+    .contato-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
 /*css responsivo desktop */
@@ -160,7 +296,7 @@
 /*css responsivo desktop padrão*/
 @media (width >= 1200px){
     .metodos-box .box {
-        width: 560px; 
+        width: 580px; 
         height: 270px;
     }
 }
@@ -175,7 +311,7 @@
 /*css responsivo desktop garnde*/
 @media (width >=  1500px){
     .metodos-box .box {
-        width: 702px; 
+        width: 665px; 
         height: 300px;
     }
 }

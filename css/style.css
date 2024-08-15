@@ -358,13 +358,14 @@ main .container > *:not(.main-img) {
 }
 
 .metodos-box{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .metodos-box .box {
-    width: 500px; 
+    width: 450px; 
     height: 293px;
     padding: 20px 30px 40px 30px;
     background-color: #ececec;

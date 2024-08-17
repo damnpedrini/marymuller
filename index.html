@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <div class="fundo">
+    <div class="fundo" id="home">
         <!-- navbar -->
         <header>
             <div class="container">
@@ -29,20 +29,24 @@
                         <img src="img/Logo 2.svg" alt="Logo">
                     </div>
                     
-                    <ul class="navbar">
-                        <a href="#section1" class="home">Home</a>
-                        <a href="#section2">Sobre</a>
-                        <a href="#section3">Serviços</a>
-                        <a href="#section4">Testemunhos</a>
-                        <a href="#section5">Contato</a>
+                    <ul class="navbar ">
+                        <a href="#home" class="home">Home</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#metodos">Métodos </a>
+                        <a href="#testemunhos">Testemunhos</a>
+                        <a href="#contato">Contato</a>
                     </ul>
+
+                    <div class="menu-icon">
+                        <img src="img/menu.png" alt="icone de menu">
+                    </div>
                 </nav>
             </div>
         </header>
         <!-- fim da navbar-->
 
         <!-- pagina principal -->
-        <main id="main">
+        <main>
             <div class="container">
                 <div class="main-text">
                     <p>Agende uma consulta comigo e comece a</p>
@@ -73,9 +77,9 @@
         <!-- fim da pagina principal -->
     </div>
     
-    <!-- section serviços -->
+    <!-- section serviços e sobre a nutri -->
     <section>
-        <div class="servicos">
+        <div class="servicos" id="sobre">
             <div class="container">
                 <div class="servicos-text">
                     <h1>SOBRE A NUTRI</h1>
@@ -106,7 +110,7 @@
 
     <!-- section metodos e estrategias -->
     <section>
-        <div class="metodos">
+        <div class="metodos"  id="metodos">
             <div class="container">
                 <!-- texto dos metodos-->
                 <div class="metodos-text">
@@ -162,7 +166,7 @@
 
     <!--section testemunhos-->
     <section>
-        <div class="testemunhos">
+        <div class="testemunhos" id="testemunhos">
             <b>TESTEMUNHOS DOS</b>
             <div class="container">
                     
@@ -182,7 +186,7 @@
 
     <!--section contatos-->
     <section>
-        <div class="contato">
+        <div class="contato" id="contato">
             <div class="container">
                 <div class="contato-text">
                     <b>ENTRE EM CONTATO</b>
@@ -229,5 +233,30 @@
             </div>
         </div>
     </section>
+
+    <div class="linha">
+        <hr class="linha-divisoria">
+    </div>
+
+    <!--footer da pagina-->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+               <p>Transforme sua vida hoje.</p>
+            </div>
+    
+            <div class="footer-section">
+               <img src="img/Group 69.png" alt="divisoria">
+            </div>
+    
+            <div class="footer-section">
+                <img src="img/Group.png" alt="logo sakura">
+                <p>Nutri Maryellen Muller. Todos os direitos resrvados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/responsivo.js"></script>
 </body>
 </html>

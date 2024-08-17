@@ -86,6 +86,12 @@ header nav {
     color: #DD7833;
 }
 
+.menu-icon {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
 /* css pagina principal */
 main .container {
     display: flex;
@@ -541,6 +547,7 @@ main .container > *:not(.main-img) {
     justify-content: space-between;
     align-items: center;
 }
+
 .contato-text {
     display: flex;
     flex-direction: column; 

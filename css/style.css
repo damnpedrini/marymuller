@@ -184,7 +184,7 @@ main .container > *:not(.main-img) {
 }
 
 .main-img img {
-    width: 84%;
+    width: 70%;
     margin-top: auto; 
     margin: 0;
     padding: 0;
@@ -665,18 +665,18 @@ main .container > *:not(.main-img) {
 }
 
 .contato-img {
-    width: 40%;
+    width: 50%;
     display: flex;
     border-radius: 30px;
-    background-color: rgb(249, 249, 249);
     justify-content: center; 
     align-items: flex-end;  
     padding-bottom: 0; 
 }
 
 .contato-img img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border-radius: 20px;
 }
 
 /* css da linha divisoria*/

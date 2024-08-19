@@ -74,6 +74,7 @@ header nav {
     display: block;
     cursor: pointer;
     transition: transform 0.3s ease;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -289,7 +290,7 @@ main .container > *:not(.main-img) {
     width: 240px;
     height: 53px;
     margin-top: 80px;
-    background-color: #86ffd79c;
+    background-color: #dbeee9;
     padding: 16px 0px;
     border: none;
     border-radius: 8px;

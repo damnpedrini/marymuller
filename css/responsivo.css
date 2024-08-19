@@ -9,7 +9,7 @@
     }
 
     .menu-icon img{
-        width: 50px;
+        width: 40px;
     }
 
     header .logo img {
@@ -48,7 +48,7 @@
         justify-content: center;
         align-items: center;
         padding: 0 10px;
-        min-height: 100vh;
+        min-height: 90vh;
     }
 
     main .container > *:not(.main-img) {

@@ -1,49 +1,31 @@
+// SRP: Classe para gerenciar o estado da Navbar
 class NavbarManager {
     constructor(navbarSelector, menuIconSelector) {
         this.navbar = document.querySelector(navbarSelector);
         this.menuIcon = document.querySelector(menuIconSelector);
     }
 
-    // SRP: Responsável por checar o estado da navbar e ajustar o menu icon
     updateMenuIconPosition() {
         if (this.isNavbarActive()) {
-            this.setMenuIconFixed();
+            this.setMenuIconPosition('fixed');
         } else {
-            this.setMenuIconAbsolute();
+            this.setMenuIconPosition('absolute');
         }
     }
 
-    // SRP: Verifica se a navbar está ativa
     isNavbarActive() {
         return this.navbar.classList.contains('ativo');
     }
 
-    // SRP: Define a posição do menu icon como fixed
-    setMenuIconFixed() {
-        this.menuIcon.style.position = 'fixed';
+    setMenuIconPosition(position) {
+        this.menuIcon.style.position = position;
     }
 
-    // SRP: Define a posição do menu icon como absolute
-    setMenuIconAbsolute() {
-        this.menuIcon.style.position = 'absolute';
-    }
-
-    // OCP: Facilita a extensão de eventos sem modificar o código existente
     init() {
         this.updateMenuIconPosition();
-
-        this.navbar.addEventListener('transitionend', () => {
-            this.updateMenuIconPosition();
-        });
+        this.navbar.addEventListener('transitionend', () => this.updateMenuIconPosition());
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    // DIP: Dependência é injetada, facilitando o teste e a manutenção
-    const navbarManager = new NavbarManager('.navbar', '.menu-icon');
-    navbarManager.init();
-});
-
 
 // SRP: Classe para gerenciar a rolagem suave
 class ScrollManager {
@@ -51,7 +33,6 @@ class ScrollManager {
         this.duration = duration;
     }
 
-    // Executa o scroll suave até a posição especificada
     smoothScrollTo(endX, endY) {
         const startX = window.scrollX || window.pageXOffset;
         const startY = window.scrollY || window.pageYOffset;
@@ -67,7 +48,7 @@ class ScrollManager {
                 clearInterval(timer);
             }
             window.scroll(newX, newY);
-        }, 1000 / 60);
+        }, 1000 / 90);
     }
 }
 
@@ -76,28 +57,41 @@ class LinkHandler {
     constructor(linksSelector, scrollManager, offset = 0) {
         this.links = document.querySelectorAll(linksSelector);
         this.scrollManager = scrollManager;
-        this.offset = offset; // Offset para considerar cabeçalhos fixos ou margens
+        this.offset = offset;
     }
 
-    // Inicializa o gerenciamento de eventos para cada link
     init() {
+        this.preventAutoScrollOnLoad(); // Evita rolagem automática ao carregar a página
         this.links.forEach((link) => {
-            link.addEventListener("click", (event) => this.scrollToSection(event));
+            link.addEventListener("click", (event) => this.handleLinkClick(event));
         });
     }
 
-    // Manipula o evento de clique e executa a rolagem suave
-    scrollToSection(event) {
+    handleLinkClick(event) {
         event.preventDefault();
         const targetElement = event.target;
-        const distanceFromTheTop = this.getDistanceFromTheTop(targetElement) - this.offset;
-        this.scrollManager.smoothScrollTo(0, distanceFromTheTop);
+        const targetId = targetElement.getAttribute("href").substring(1);
+
+        if (targetId && document.getElementById(targetId)) {
+            const distanceFromTheTop = this.getDistanceFromTheTop(targetId) - this.offset;
+            this.scrollManager.smoothScrollTo(0, distanceFromTheTop);
+        }
     }
 
-    // Calcula a distância do topo até o elemento alvo
-    getDistanceFromTheTop(element) {
-        const id = element.getAttribute("href");
-        return document.querySelector(id).offsetTop;
+    getDistanceFromTheTop(targetId) {
+        // Adicionando a altura do topo da página para compensar a posição
+        const elementTop = document.getElementById(targetId).getBoundingClientRect().top;
+        const scrollY = window.scrollY || window.pageYOffset;
+        return elementTop + scrollY;  // Calcula a distância mais precisa do elemento
+    }
+
+    preventAutoScrollOnLoad() {
+        if (window.location.hash) {
+            window.scrollTo(0, 0);
+            setTimeout(() => {
+                window.scrollTo(0, 0); // Garante que o navegador não pule para o ID automaticamente
+            }, 1);
+        }
     }
 }
 
@@ -105,14 +99,37 @@ class LinkHandler {
 class Ease {
     static easeInOutQuart(time, from, distance, duration) {
         if ((time /= duration / 2) < 1) return (distance / 2) * time * time * time * time + from;
-        return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
+        return (-distance / 1.9) * ((time -= 2) * time * time * time - 2) + from;
     }
 }
 
 // DIP: Injeção de dependência ao criar instâncias das classes
 document.addEventListener('DOMContentLoaded', () => {
-    const scrollManager = new ScrollManager();
-    const linkHandler = new LinkHandler('.navbar a[href^="#"]', scrollManager, 0); // O valor 90 representa o offset
-    linkHandler.init();
-});
+    const navbarManager = new NavbarManager('.navbar', '.menu-icon');
+    navbarManager.init();
 
+    const scrollManager = new ScrollManager();
+    const linkHandler = new LinkHandler('.navbar a[href^="#"]', scrollManager, 90); // Offset ajustado para 90px
+    linkHandler.init();
+
+    // JavaScript para o funcionamento do botão da navbar responsiva
+    var menuIcon = document.querySelector('.menu-icon');
+    var navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        if (navbar.classList.contains('ativo')) {
+            navbar.classList.remove('ativo');
+            document.querySelector('.menu-icon img').src = 'img/menu.png';
+        } else {
+            navbar.classList.add('ativo');
+            document.querySelector('.menu-icon img').src = 'img/close.png';
+        }
+    });
+
+    document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('ativo');
+            document.querySelector('.menu-icon img').src = 'img/menu.png';
+        });
+    });
+});

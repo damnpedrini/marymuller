@@ -99,7 +99,7 @@ class LinkHandler {
 class Ease {
     static easeInOutQuart(time, from, distance, duration) {
         if ((time /= duration / 2) < 1) return (distance / 2) * time * time * time * time + from;
-        return (-distance / 1.9) * ((time -= 2) * time * time * time - 2) + from;
+        return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
     }
 }
 

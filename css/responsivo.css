@@ -28,7 +28,7 @@
         transition: 0.3s;
         flex-direction: column;
         justify-content: center;
-        background-color: #1E3932;
+        background-image: url('../img/background.png');
         z-index: 10;
     }
 
